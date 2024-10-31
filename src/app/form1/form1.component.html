@@ -1,0 +1,15 @@
+<form [formGroup]="form1" (submit)="onSubmit(form1.value, 'form2')">
+    <select formControlName="death_type" name="deathTypeLabels" id="deathTypeLabels">
+        @for (deathTypeLabel of deathTypeLabels; track $index) {
+            <option [value]="deathTypeLabel">{{ deathTypeLabel }}</option>
+        }
+    </select>
+    
+    <select name="identificationLabels" id="identificationLabels" formControlName="identification_type">
+        @for (identificationLabel of identificationLabels; track $index) {
+            <option [value]="identificationLabel">{{ identificationLabel }}</option>
+        }
+    </select>
+
+    <input type="submit">
+</form>
