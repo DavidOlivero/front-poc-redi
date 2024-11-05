@@ -1,11 +1,11 @@
 <form [formGroup]="form2" (submit)="onSubmit(form2.value, 'form2')">
-    <select formControlName="maritalStatus" name="marital-status" id="marital-status">
+    <select formControlName="marital_status" name="marital-status" id="marital-status">
         @for (maritalStatu of maritalStatus; track $index) {
             <option [value]="maritalStatu">{{ maritalStatu }}</option>
         }
     </select>
 
-    <select formControlName="municipalitys" name="municipality" id="municipality">
+    <select formControlName="municipality" name="municipality" id="municipality">
         @for (municipality of municipalitys; track $index) {
             <option [value]="municipality">{{ municipality }}</option>
         }

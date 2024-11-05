@@ -1,4 +1,4 @@
-<form [formGroup]="form1" (submit)="onSubmit(form1.value, 'form2')">
+<form [formGroup]="form1" (submit)="onSubmit(form1.value, 'form1')">
     <select formControlName="death_type" name="deathTypeLabels" id="deathTypeLabels">
         @for (deathTypeLabel of deathTypeLabels; track $index) {
             <option [value]="deathTypeLabel">{{ deathTypeLabel }}</option>
